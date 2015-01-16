@@ -13,9 +13,22 @@ int main(void)
     printf("Input5: ");
     scanf(" %c", &e);
     printf("**********\n");
-    printf("Output1: %c\n", );
+    if (a >= 97) {
+        printf("Output1: %c\n", (a-'a'+1)%26+97);
+    } else {
+        printf("Output1: %c\n", (a-'A'+1)%26+65);
+    }
     printf("Output2: %c\n", b);
-    printf("Output3: %c\n", c);
+    if (c >= 97) {
+        printf("Output3: %c\n", (c-'a'+1)%26+97);
+    } else {
+        printf("Output3: %c\n", (c-'A'+1)%26+65);
+    }
     printf("Output4: %c\n", d);
-    printf("Output5: %c\n", e);
+    if (e >= 97) {
+        printf("Output5: %c\n", (e-'a'+1)%26+97);
+    } else {
+        printf("Output5: %c\n", (e-'A'+1)%26+65);
+    }
+    return 0;
 }
