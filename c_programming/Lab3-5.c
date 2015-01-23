@@ -10,9 +10,9 @@ int main(void)
     scanf("%d", &null_in_centimetres);
 
     // calculate
-    null_cen_to_metres = (null_in_centimetres/100.0)/2;
+    null_cen_to_metres = (null_in_centimetres/100.0)/2.0;
 
     // print output
-    printf("Volume: %.4f m^3\n", (4 * 3.1416 * pow(null_cen_to_metres, 3))/3);
-    printf("Surface Area: %.4f m^2\n", (4 * 3.1416 * pow(null_cen_to_metres, 2)));
+    printf("Volume: %.4f m^3\n", (4.0 * 3.1416 * pow(null_cen_to_metres, 3))/3.0);
+    printf("Surface Area: %.4f m^2\n", 4.0 * 3.1416 * pow(null_cen_to_metres, 2));
 }
