@@ -4,15 +4,15 @@ int main(void)
 {
     // define neccesary variables
     int null_in_centimetres;
-    float null_cen_to_metres;
+    float null_cen_to_metres, radius;
 
     // input data to program
     scanf("%d", &null_in_centimetres);
 
     // calculate
-    null_cen_to_metres = (null_in_centimetres/100.0)/2.0;
+    radius = null_in_centimetres/2;
 
     // print output
-    printf("Volume: %.4f m^3\n", (4.0 * 3.1416 * pow(null_cen_to_metres, 3))/3.0);
-    printf("Surface Area: %.4f m^2\n", 4.0 * 3.1416 * pow(null_cen_to_metres, 2));
+    printf("Volume: %f m^3\n", ((4 * 3.1416 * pow(radius, 3))/3)/1000000.0);
+    printf("Surface Area: %f m^2\n", (4 * 3.1416 * pow(radius, 2))/10000.0);
 }
