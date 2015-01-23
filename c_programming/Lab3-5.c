@@ -10,8 +10,8 @@ int main(void)
 
     // calculate
     radius = null_in_centimetres/2.0;
-    volume = (4 * 3.1416 * pow(radius, 3))/3.0;
-    surface = 4.0 * 3.1416 * pow(radius, 2);
+    volume = (4.0 * 3.14160 * pow(radius, 3.0))/3.0;
+    surface = 4.0 * 3.14160 * pow(radius, 2.0);
 
     // print output
     printf("Volume: %.4f m^3\n", volume/1000000.0);
